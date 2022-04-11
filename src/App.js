@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import musicData from './data';
+import Songs from './Songs';
 
 function App() {
+  const month = musicData[0].date;
+
+  const songs = musicData[0].songs.map((song) => (
+    <Songs author={song.author} title={song.title} />
+  ));
+
+  console.log(songs);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1 className="title">lusco-fusco</h1>
+      <p className="sub-title">
+        an eclectic monthly music playlist, curated by Wojciech Gmuzdek
+        (fontilan)
+      </p>
+      <h2 className="date">{month}</h2>
+      <p className="songs-container">{songs}</p>
     </div>
   );
 }

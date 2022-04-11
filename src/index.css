@@ -1,13 +1,105 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  height: 100%;
+  display: grid;
+  place-items: center;
+  font-family: 'Space Mono', monospace;
+  /* background-color: #fafafa; */
+  /* color: #42425a; */
+  background-color: #1a1a1a;
+  color: #c1c1c1;
+  font-size: 12px;
+}
+
+body {
+  padding: 2em 0.25em 4em;
+}
+
+.title {
+  font-size: 48px;
+  letter-spacing: -5px;
+}
+
+.sub-title {
+  margin-top: 0.5em;
+  font-size: 12px;
+  font-style: italic;
+}
+
+.date {
+  color: #9059ff;
+  font-size: 24px;
+  margin-top: 1em;
+  letter-spacing: -1px;
+}
+
+h1,
+h2,
+.song--author {
+  /* color: #20123a; */
+  color: #ffffff;
+}
+
+.songs-container {
+  margin-top: 2em;
+}
+
+.song {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.song--title {
+  font-style: italic;
+}
+
+.song--separator {
+  display: none;
+}
+
+@media (min-width: 800px) {
+  .title {
+    font-size: 60px;
+  }
+  .sub-title {
+    font-size: 15px;
+  }
+  .date {
+    font-size: 30px;
+  }
+  .song {
+    margin-top: 18px;
+    font-size: 15px;
+  }
+  .songs-container {
+    margin-top: 2.5em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .title {
+    font-size: 75px;
+  }
+  .sub-title {
+    font-size: 18px;
+  }
+  .date {
+    font-size: 38px;
+  }
+  .song {
+    margin-top: 10px;
+    font-size: 19px;
+    flex-direction: row;
+  }
+  .songs-container {
+    margin-top: 3em;
+  }
+  .song--separator {
+    display: unset;
+  }
 }
