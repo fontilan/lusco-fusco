@@ -9,13 +9,21 @@ function App() {
     <Songs author={song.author} title={song.title} />
   ));
 
-  console.log(songs);
   return (
     <div className="App">
       <h1 className="title">lusco-fusco</h1>
       <p className="sub-title">
         an eclectic monthly music playlist, curated by Wojciech Gmuzdek
-        (fontilan)
+      </p>
+      <p className="link">
+        Listen{' '}
+        <a
+          href="https://open.spotify.com/playlist/7Lz7wRpOszolsTFfFe6VmB?si=4354ebb61f40420b"
+          target="_blank"
+          rel="noreferrer"
+        >
+          here
+        </a>
       </p>
       <h2 className="date">{month}</h2>
       <p className="songs-container">{songs}</p>
