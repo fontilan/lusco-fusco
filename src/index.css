@@ -30,6 +30,16 @@ body {
   font-style: italic;
 }
 
+.link {
+  margin-top: 2em;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.link > a {
+  color: #cc9eff;
+}
+
 .date {
   color: #9059ff;
   font-size: 24px;
@@ -66,7 +76,8 @@ h2,
   .title {
     font-size: 60px;
   }
-  .sub-title {
+  .sub-title,
+  .link {
     font-size: 15px;
   }
   .date {
@@ -85,7 +96,8 @@ h2,
   .title {
     font-size: 75px;
   }
-  .sub-title {
+  .sub-title,
+  .link {
     font-size: 18px;
   }
   .date {
