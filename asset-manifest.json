@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/lusco-fusco/static/css/main.256de18f.css",
+    "main.css": "/lusco-fusco/static/css/main.61816587.css",
     "main.js": "/lusco-fusco/static/js/main.2b5495a7.js",
     "index.html": "/lusco-fusco/index.html",
-    "main.256de18f.css.map": "/lusco-fusco/static/css/main.256de18f.css.map",
+    "main.61816587.css.map": "/lusco-fusco/static/css/main.61816587.css.map",
     "main.2b5495a7.js.map": "/lusco-fusco/static/js/main.2b5495a7.js.map"
   },
   "entrypoints": [
-    "static/css/main.256de18f.css",
+    "static/css/main.61816587.css",
     "static/js/main.2b5495a7.js"
   ]
 }
