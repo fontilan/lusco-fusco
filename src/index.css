@@ -1,3 +1,18 @@
+/* root rules */
+:root {
+  /* font sizes */
+  --fs-xl: clamp(3rem, 12vw + 1rem, 6rem);
+  --fs-l: 2rem;
+  --fs-m: 1rem;
+
+  /* colours */
+  --clr-main: #9059ff;
+  --clr-main-light: #cc9eff;
+  --clr-black: #1a1a1a;
+  --clr-white: #c1c1c1;
+  --clr-pure-white: #ffffff;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -10,8 +25,8 @@ html {
   font-family: 'Space Mono', monospace;
   /* background-color: #fafafa; */
   /* color: #42425a; */
-  background-color: #1a1a1a;
-  color: #c1c1c1;
+  background-color: var(--clr-black);
+  color: var(--clr-white);
   font-size: 12px;
 }
 
@@ -20,29 +35,35 @@ body {
 }
 
 .title {
-  font-size: 48px;
+  font-size: var(--fs-xl);
   letter-spacing: -5px;
 }
 
 .sub-title {
   margin-top: 0.5em;
-  font-size: 12px;
+  font-size: var(--fs-m);
   font-style: italic;
 }
 
 .link {
   margin-top: 2em;
   font-weight: 700;
-  color: #ffffff;
+  color: var(--clr-pure-white);
+  font-size: var(--fs-m);
 }
 
 .link > a {
-  color: #cc9eff;
+  background-color: var(--clr-main-light);
+  padding: 10px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-style: italic;
+  color: var(--clr-black);
 }
 
 .date {
-  color: #9059ff;
-  font-size: 24px;
+  color: var(--clr-main);
+  font-size: var(--fs-l);
   margin-top: 1em;
   letter-spacing: -1px;
 }
@@ -51,7 +72,7 @@ h1,
 h2,
 .song--author {
   /* color: #20123a; */
-  color: #ffffff;
+  color: var(--clr-pure-white);
 }
 
 .songs-container {
@@ -59,9 +80,10 @@ h2,
 }
 
 .song {
-  margin-top: 15px;
+  margin-top: 10px;
   display: flex;
   flex-direction: column;
+  font-size: var(--fs-m);
 }
 
 .song--title {
@@ -72,44 +94,22 @@ h2,
   display: none;
 }
 
-@media (min-width: 800px) {
-  .title {
-    font-size: 60px;
-  }
-  .sub-title,
-  .link {
-    font-size: 15px;
-  }
-  .date {
-    font-size: 30px;
-  }
-  .song {
-    margin-top: 18px;
-    font-size: 15px;
-  }
-  .songs-container {
-    margin-top: 2.5em;
+/* media queries */
+@media (min-width: 725px) {
+  :root {
+    --fs-l: 2.5rem;
+    --fs-m: 1.25rem;
   }
 }
 
-@media (min-width: 1200px) {
-  .title {
-    font-size: 75px;
-  }
-  .sub-title,
-  .link {
-    font-size: 18px;
-  }
-  .date {
-    font-size: 38px;
+@media (min-width: 1080px) {
+  :root {
+    --fs-l: 3rem;
+    --fs-m: 1.5rem;
   }
   .song {
-    margin-top: 10px;
-    font-size: 19px;
     flex-direction: row;
-  }
-  .songs-container {
-    margin-top: 3em;
+    margin-top: 1px;
   }
   .song--separator {
     display: unset;
