@@ -68,7 +68,7 @@ const musicData = [
         title: 'Clean Me Clean',
       },
       {
-        author: 'Ranko Mataja',
+        author: 'Branko Mataja',
         title: 'Sreo Sam Te',
       },
       {
