@@ -54,10 +54,9 @@ body {
 
 .link > a {
   background-color: var(--clr-main-light);
-  padding: 10px;
+  padding: 10px 20px;
   border-radius: 6px;
   text-decoration: none;
-  font-style: italic;
   color: var(--clr-black);
 }
 
