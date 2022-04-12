@@ -1,12 +1,14 @@
 import React from 'react';
+import { nanoid } from 'nanoid';
 import musicData from './data';
 import Songs from './Songs';
 
 function App() {
   const month = musicData[0].date;
+  const spotifyLink = musicData[0].link;
 
   const songs = musicData[0].songs.map((song) => (
-    <Songs author={song.author} title={song.title} />
+    <Songs author={song.author} title={song.title} key={nanoid()} />
   ));
 
   return (
@@ -16,17 +18,12 @@ function App() {
         an eclectic monthly music playlist, curated by Wojciech Gmuzdek
       </p>
       <p className="link">
-        Listen{' '}
-        <a
-          href="https://open.spotify.com/playlist/7Lz7wRpOszolsTFfFe6VmB?si=4354ebb61f40420b"
-          target="_blank"
-          rel="noreferrer"
-        >
-          here
+        <a href={spotifyLink} target="_blank" rel="noreferrer">
+          Listen on Spotify
         </a>
       </p>
       <h2 className="date">{month}</h2>
-      <p className="songs-container">{songs}</p>
+      <div className="songs-container">{songs}</div>
     </div>
   );
 }
