@@ -21,7 +21,7 @@ const musicData = [
       },
       {
         author: 'Lucidvox',
-        title: 'Swarm',
+        title: 'Swarn',
       },
       {
         author: 'Linda Lewis',
