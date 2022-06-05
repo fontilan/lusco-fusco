@@ -37,6 +37,7 @@ body {
   -webkit-font-smoothing: antialiased;
   height: 100%;
   line-height: 1.5;
+  padding-bottom: 4rem;
 }
 
 .title {
@@ -47,14 +48,14 @@ body {
 .sub-title {
   font-size: var(--fs-m);
   font-style: italic;
-  margin-top: 0.5em;
+  margin-top: 1rem;
 }
 
 .link {
   color: var(--clr-pure-white);
   font-size: var(--fs-m);
   font-weight: 700;
-  margin-top: 2em;
+  margin-top: 4rem;
 }
 
 .link > a {
@@ -69,7 +70,7 @@ body {
   color: var(--clr-main);
   font-size: var(--fs-l);
   letter-spacing: -1px;
-  margin-top: 1em;
+  margin-top: 3rem;
 }
 
 h1,
@@ -79,7 +80,7 @@ h2,
 }
 
 .songs-container {
-  margin-top: 2em;
+  margin-top: 2rem;
 }
 
 .song {
