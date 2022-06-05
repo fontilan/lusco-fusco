@@ -1,5 +1,5 @@
-/* eslint-disable react/prop-types */
 import React from 'react';
+import PropTypes from 'prop-types';
 
 function Songs({ author, title }) {
   return (
@@ -10,5 +10,10 @@ function Songs({ author, title }) {
     </div>
   );
 }
+
+Songs.propTypes = {
+  author: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+};
 
 export default Songs;
