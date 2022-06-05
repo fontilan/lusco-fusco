@@ -13,25 +13,30 @@
   --clr-pure-white: #fbfbfe;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 * {
   margin: 0;
-  padding: 0;
 }
 
 html {
-  height: 100%;
-  display: grid;
-  place-items: center;
-  font-family: 'Space Mono', monospace;
-  /* background-color: #fafafa; */
-  /* color: #42425a; */
   background-color: var(--clr-black);
   color: var(--clr-white);
+  display: grid;
+  font-family: 'Space Mono', monospace;
   font-size: 12px;
+  height: 100%;
+  place-items: center;
 }
 
 body {
-  padding: 2em 0.25em 4em;
+  -webkit-font-smoothing: antialiased;
+  height: 100%;
+  line-height: 1.5;
 }
 
 .title {
@@ -40,37 +45,36 @@ body {
 }
 
 .sub-title {
-  margin-top: 0.5em;
   font-size: var(--fs-m);
   font-style: italic;
+  margin-top: 0.5em;
 }
 
 .link {
-  margin-top: 2em;
-  font-weight: 700;
   color: var(--clr-pure-white);
   font-size: var(--fs-m);
+  font-weight: 700;
+  margin-top: 2em;
 }
 
 .link > a {
   background-color: var(--clr-main-light);
-  padding: 10px 20px;
   border-radius: 6px;
-  text-decoration: none;
   color: var(--clr-black);
+  padding: 10px 20px;
+  text-decoration: none;
 }
 
 .date {
   color: var(--clr-main);
   font-size: var(--fs-l);
-  margin-top: 1em;
   letter-spacing: -1px;
+  margin-top: 1em;
 }
 
 h1,
 h2,
 .song--author {
-  /* color: #20123a; */
   color: var(--clr-pure-white);
 }
 
@@ -79,10 +83,10 @@ h2,
 }
 
 .song {
-  margin-top: 10px;
   display: flex;
   flex-direction: column;
   font-size: var(--fs-m);
+  margin-top: 10px;
 }
 
 .song--title {
