@@ -1,6 +1,6 @@
 import React from 'react';
 import { nanoid } from 'nanoid';
-import musicData from './june';
+import musicData from './data';
 import Songs from './Songs';
 
 function App() {
