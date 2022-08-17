@@ -1,16 +1,16 @@
 /* root rules */
 :root {
   /* font sizes */
-  --font-size-xl: clamp(3rem, 12vw + 1rem, 6rem);
+  --font-size-xl: clamp(3rem, 12vw, 7rem);
   --font-size-l: clamp(2rem, 6vw, 2.5rem);
   --font-size-m: clamp(1rem, 4vw, 1.5rem);
 
   /* colours */
-  --color-purple-0: #9059ff;
-  --color-purple-1: #cc9eff;
-  --color-mono-0: #15141a;
-  --color-mono-1: #cfcfd8;
-  --color-mono-2: #fbfbfe;
+  --color-main-neutral: #00a380;
+  --color-main-light: #10ffcb;
+  --color-main-dark: #201d1e;
+  --color-white-1: #cfcfd8;
+  --color-white-0: #fbfbfe;
 }
 
 /* RESETS */
@@ -28,8 +28,8 @@
 /* MAIN */
 
 html {
-  background-color: var(--color-mono-0);
-  color: var(--color-mono-1);
+  background-color: var(--color-main-dark);
+  color: var(--color-white-1);
   display: grid;
   font-family: 'Space Mono', monospace;
   font-size: 12px;
@@ -49,12 +49,21 @@ a {
   max-width: max-content;
 }
 
+img {
+  display: block;
+}
+
+.App {
+  max-width: 1025px;
+}
+
 /* TITLE AND SUBTITLE */
 
 .title {
-  color: var(--color-mono-2);
+  color: var(--color-white-0);
   font-size: var(--font-size-xl);
   letter-spacing: -5px;
+  margin-top: 0.5em;
 }
 
 .sub-title {
@@ -66,9 +75,9 @@ a {
 /* SPOTIFY LINK */
 
 .link {
-  background-color: var(--color-purple-1);
+  background-color: var(--color-main-light);
   border-radius: 6px;
-  color: var(--color-mono-0);
+  color: var(--color-main-dark);
   font-size: var(--font-size-m);
   font-weight: 700;
   margin-top: 4rem;
@@ -79,7 +88,7 @@ a {
 /* DATE */
 
 .date {
-  color: var(--color-purple-0);
+  color: var(--color-main-neutral);
   font-size: var(--font-size-l);
   letter-spacing: -1px;
   margin-top: 3rem;
@@ -88,19 +97,62 @@ a {
 /* MAIN CONTAINER */
 
 .main-container {
-  display: flex;
   margin-top: 3em;
 }
 
+/* COVER / ARTWORK */
+.main-container--cover {
+  margin-inline: auto;
+  background-size: contain;
+  width: clamp(100px, 100%, 600px);
+  object-fit: cover;
+}
+
+.main-container--cover > img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.artwork-info {
+  text-align: right;
+  margin-top: 1em;
+}
+
+.artwork-info--title {
+  font-style: italic;
+}
+
+/* SONGS */
 .main-container--songs {
+  margin-top: 3em;
   width: 100%;
 }
 
 .song {
   font-size: var(--font-size-m);
-  margin-top: 0.25em;
+  margin-top: 0.5em;
 }
 
 .song--title {
-  color: var(--color-mono-2);
+  color: var(--color-white-0);
+}
+
+/* MEDIA QUERIES  */
+
+@media (min-width: 1025px) {
+  .main-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .main-container--songs {
+    width: 50%;
+    margin-left: 2rem;
+    margin-top: 0;
+  }
+
+  .main-container--cover {
+    width: 50%;
+    margin: auto 0;
+  }
 }
