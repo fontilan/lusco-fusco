@@ -3,6 +3,9 @@ import { nanoid } from 'nanoid';
 import musicData from './data';
 import Songs from './Songs';
 
+// const coverlink = 'https://mdl.artvee.com/sftb/212865fg.jpg';
+// const altText = "Peter Ilsted's artwork titled En druser"
+
 function App() {
   const month = musicData[0].date;
   const spotifyLink = musicData[0].link;
@@ -13,17 +16,20 @@ function App() {
 
   return (
     <div className="App">
-      <h1 className="title">lusco-fusco</h1>
-      <p className="sub-title">
-        an eclectic monthly music playlist, curated by Wojciech Gmuzdek
-      </p>
-
+      <div>
+        <h1 className="title">lusco-fusco</h1>
+        <p className="sub-title">
+          an eclectic monthly music playlist, curated by Wojciech Gmuzdek
+        </p>
+      </div>
       <a className="link" href={spotifyLink} target="_blank" rel="noreferrer">
         Listen on Spotify
       </a>
-
       <h2 className="date">{month}</h2>
-      <div className="songs-container">{songs}</div>
+      <div className="main-container">
+        <div className="main-container--songs">{songs}</div>
+        {/* <img className="main-container--cover" src={coverLink} alt={altText} /> */}
+      </div>
     </div>
   );
 }
