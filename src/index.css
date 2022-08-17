@@ -13,6 +13,8 @@
   --color-mono-2: #fbfbfe;
 }
 
+/* RESETS */
+
 *,
 *::before,
 *::after {
@@ -22,6 +24,8 @@
 * {
   margin: 0;
 }
+
+/* MAIN */
 
 html {
   background-color: var(--color-mono-0);
@@ -45,7 +49,10 @@ a {
   max-width: max-content;
 }
 
+/* TITLE AND SUBTITLE */
+
 .title {
+  color: var(--color-mono-2);
   font-size: var(--font-size-xl);
   letter-spacing: -5px;
 }
@@ -55,6 +62,8 @@ a {
   font-style: italic;
   margin-top: 1rem;
 }
+
+/* SPOTIFY LINK */
 
 .link {
   background-color: var(--color-purple-1);
@@ -67,6 +76,8 @@ a {
   text-decoration: none;
 }
 
+/* DATE */
+
 .date {
   color: var(--color-purple-0);
   font-size: var(--font-size-l);
@@ -74,38 +85,22 @@ a {
   margin-top: 3rem;
 }
 
-h1,
-h2 {
-  color: var(--color-mono-2);
+/* MAIN CONTAINER */
+
+.main-container {
+  display: flex;
+  margin-top: 3em;
 }
 
-.songs-container {
-  margin-top: 2rem;
+.main-container--songs {
+  width: 100%;
 }
 
 .song {
-  display: flex;
-  flex-direction: column-reverse;
   font-size: var(--font-size-m);
-  margin-top: 0.75em;
+  margin-top: 0.25em;
 }
 
 .song--title {
   color: var(--color-mono-2);
-  font-style: italic;
-}
-
-.song--separator {
-  display: none;
-}
-
-/* media queries */
-@media (min-width: 925px) {
-  .song {
-    flex-direction: row;
-    margin-top: 0.25em;
-  }
-  .song--separator {
-    display: unset;
-  }
 }
