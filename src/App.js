@@ -17,11 +17,11 @@ function App() {
       <p className="sub-title">
         an eclectic monthly music playlist, curated by Wojciech Gmuzdek
       </p>
-      <p className="link">
-        <a href={spotifyLink} target="_blank" rel="noreferrer">
-          Listen on Spotify
-        </a>
-      </p>
+
+      <a className="link" href={spotifyLink} target="_blank" rel="noreferrer">
+        Listen on Spotify
+      </a>
+
       <h2 className="date">{month}</h2>
       <div className="songs-container">{songs}</div>
     </div>
