@@ -1,16 +1,16 @@
 /* root rules */
 :root {
   /* font sizes */
-  --fs-xl: clamp(3rem, 12vw + 1rem, 6rem);
-  --fs-l: 2rem;
-  --fs-m: 1rem;
+  --font-size-xl: clamp(3rem, 12vw + 1rem, 6rem);
+  --font-size-l: clamp(2rem, 6vw, 2.5rem);
+  --font-size-m: clamp(1rem, 4vw, 1.5rem);
 
   /* colours */
-  --clr-main: #9059ff;
-  --clr-main-light: #cc9eff;
-  --clr-black: #15141a;
-  --clr-white: #cfcfd8;
-  --clr-pure-white: #fbfbfe;
+  --color-purple-0: #9059ff;
+  --color-purple-1: #cc9eff;
+  --color-mono-0: #15141a;
+  --color-mono-1: #cfcfd8;
+  --color-mono-2: #fbfbfe;
 }
 
 *,
@@ -24,8 +24,8 @@
 }
 
 html {
-  background-color: var(--clr-black);
-  color: var(--clr-white);
+  background-color: var(--color-mono-0);
+  color: var(--color-mono-1);
   display: grid;
   font-family: 'Space Mono', monospace;
   font-size: 12px;
@@ -36,47 +36,47 @@ html {
 body {
   -webkit-font-smoothing: antialiased;
   height: 100%;
-  line-height: 1.5;
-  padding-bottom: 4rem;
+  line-height: 1.2;
+  padding: 0.25em 0.25em 4em 0.25em;
+}
+
+a {
+  display: block;
+  max-width: max-content;
 }
 
 .title {
-  font-size: var(--fs-xl);
+  font-size: var(--font-size-xl);
   letter-spacing: -5px;
 }
 
 .sub-title {
-  font-size: var(--fs-m);
+  font-size: var(--font-size-m);
   font-style: italic;
   margin-top: 1rem;
 }
 
 .link {
-  color: var(--clr-pure-white);
-  font-size: var(--fs-m);
+  background-color: var(--color-purple-1);
+  border-radius: 6px;
+  color: var(--color-mono-0);
+  font-size: var(--font-size-m);
   font-weight: 700;
   margin-top: 4rem;
-}
-
-.link > a {
-  background-color: var(--clr-main-light);
-  border-radius: 6px;
-  color: var(--clr-black);
   padding: 10px 20px;
   text-decoration: none;
 }
 
 .date {
-  color: var(--clr-main);
-  font-size: var(--fs-l);
+  color: var(--color-purple-0);
+  font-size: var(--font-size-l);
   letter-spacing: -1px;
   margin-top: 3rem;
 }
 
 h1,
-h2,
-.song--author {
-  color: var(--clr-pure-white);
+h2 {
+  color: var(--color-mono-2);
 }
 
 .songs-container {
@@ -85,12 +85,13 @@ h2,
 
 .song {
   display: flex;
-  flex-direction: column;
-  font-size: var(--fs-m);
-  margin-top: 10px;
+  flex-direction: column-reverse;
+  font-size: var(--font-size-m);
+  margin-top: 0.75em;
 }
 
 .song--title {
+  color: var(--color-mono-2);
   font-style: italic;
 }
 
@@ -99,21 +100,10 @@ h2,
 }
 
 /* media queries */
-@media (min-width: 725px) {
-  :root {
-    --fs-l: 2.5rem;
-    --fs-m: 1.25rem;
-  }
-}
-
-@media (min-width: 1080px) {
-  :root {
-    --fs-l: 3rem;
-    --fs-m: 1.5rem;
-  }
+@media (min-width: 925px) {
   .song {
     flex-direction: row;
-    margin-top: 1px;
+    margin-top: 0.25em;
   }
   .song--separator {
     display: unset;
