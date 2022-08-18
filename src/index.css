@@ -41,7 +41,7 @@ body {
   -webkit-font-smoothing: antialiased;
   height: 100%;
   line-height: 1.2;
-  padding: 0.25em 0.25em 4em 0.25em;
+  padding: 0.5em 0.5em 4em 0.5em;
 }
 
 a {
@@ -109,9 +109,7 @@ img {
 
 /* COVER / ARTWORK */
 .main-container--cover {
-  background-size: contain;
-  margin-inline: auto;
-  width: clamp(100px, 100%, 600px);
+  width: clamp(100px, 100%, 495px);
 }
 
 .main-container--cover > img {
