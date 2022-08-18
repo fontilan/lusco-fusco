@@ -6,7 +6,7 @@ function Songs({ author, title }) {
     <p className="song">
       <span>{author}</span>
       &nbsp;—&nbsp;
-      <span className="song--title">{title}</span>
+      <span className="song__title">{title}</span>
     </p>
   );
 }

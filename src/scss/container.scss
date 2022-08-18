@@ -1,29 +1,29 @@
 @use 'colours' as *;
 @use 'fonts' as *;
 
-.main-container {
+.main {
   margin-top: 3em;
 
-  &--cover {
+  &__cover {
     width: clamp(100px, 100%, 495px);
   }
 
-  &--cover > img {
+  &__cover > img {
     border-radius: 10px;
     width: 100%;
   }
 
-  &--songs {
+  &__songs {
     margin-top: 3em;
     width: 100%;
   }
 }
 
-.artwork-info {
+.cover-info {
   margin-top: 1em;
   text-align: right;
 
-  &--title {
+  &__title {
     font-style: italic;
   }
 }
@@ -32,7 +32,7 @@
   font-size: $font-size-m;
   margin-bottom: 0.5em;
 
-  &--title {
+  &__title {
     color: $color-white-0;
     font-weight: 500;
   }

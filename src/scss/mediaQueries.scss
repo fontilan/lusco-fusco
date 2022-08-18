@@ -1,15 +1,15 @@
 @media (min-width: 1025px) {
-  .main-container {
+  .main {
     display: flex;
     flex-direction: row;
 
-    &--songs {
+    &__songs {
       margin-left: 2rem;
       margin-top: 0;
       width: 50%;
     }
 
-    &--cover {
+    &__cover {
       width: 50%;
     }
   }

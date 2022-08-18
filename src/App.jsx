@@ -26,14 +26,14 @@ function App() {
         Listen on Spotify
       </a>
       <h2 className="date">{month}</h2>
-      <div className="main-container">
-        <div className="main-container--cover">
+      <div className="main">
+        <div className="main__cover">
           <img src={cover} alt={altText} />
-          <p className="artwork-info">
-            Peter Ilsted, <span className="artwork-info--title">En druser</span>
+          <p className="cover-info">
+            Peter Ilsted, <span className="cover-info__title">En druser</span>
           </p>
         </div>
-        <div className="main-container--songs">{songs}</div>
+        <div className="main__songs">{songs}</div>
       </div>
     </div>
   );

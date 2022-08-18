@@ -1,23 +1,23 @@
-.main-container {
+.main {
   margin-top: 3em;
 }
-.main-container--cover {
+.main__cover {
   width: clamp(100px, 100%, 495px);
 }
-.main-container--cover > img {
+.main__cover > img {
   border-radius: 10px;
   width: 100%;
 }
-.main-container--songs {
+.main__songs {
   margin-top: 3em;
   width: 100%;
 }
 
-.artwork-info {
+.cover-info {
   margin-top: 1em;
   text-align: right;
 }
-.artwork-info--title {
+.cover-info__title {
   font-style: italic;
 }
 
@@ -25,7 +25,7 @@
   font-size: clamp(1rem, 2vw, 1.25rem);
   margin-bottom: 0.5em;
 }
-.song--title {
+.song__title {
   color: #fbfbfe;
   font-weight: 500;
 }
@@ -71,24 +71,24 @@ h2 {
 }
 
 @media (min-width: 1025px) {
-  .main-container {
+  .main {
     display: flex;
     flex-direction: row;
   }
-  .main-container--songs {
+  .main__songs {
     margin-left: 2rem;
     margin-top: 0;
     width: 50%;
   }
-  .main-container--cover {
+  .main__cover {
     width: 50%;
   }
 }
 /*
-    imports
+  imports
 */
 /*
-    main elements
+  main elements
 */
 html {
   background-color: hsl(336deg, 8%, 12%);
@@ -108,7 +108,7 @@ body {
 }
 
 /*
-    title
+  title
 */
 .title {
   color: #fbfbfe;
@@ -124,7 +124,7 @@ body {
 }
 
 /*
-    spotify link
+  spotify link
 */
 .link {
   background-color: hsl(167deg, 100%, 53%);
@@ -144,7 +144,7 @@ body {
 }
 
 /*
-    date
+  date
 */
 .date {
   color: hsl(167deg, 100%, 32%);
