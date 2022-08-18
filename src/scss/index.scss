@@ -1,5 +1,5 @@
 /*
-    imports
+  imports
 */
 @use 'colours' as *;
 @use 'fonts' as *;
@@ -8,7 +8,7 @@
 @use 'mediaQueries';
 
 /*
-    main elements
+  main elements
 */
 html {
   background-color: $color-main-dark;
@@ -26,8 +26,9 @@ body {
 .App {
   max-width: 1025px;
 }
+
 /*
-    title
+  title
 */
 .title {
   color: $color-white-0;
@@ -43,7 +44,7 @@ body {
 }
 
 /*
-    spotify link
+  spotify link
 */
 .link {
   background-color: $color-main-light;
@@ -64,7 +65,7 @@ body {
 }
 
 /*
-    date
+  date
 */
 .date {
   color: $color-main-neutral;
