@@ -1,9 +1,9 @@
 /* root rules */
 :root {
   /* font sizes */
-  --font-size-xl: clamp(3rem, 12vw, 7rem);
-  --font-size-l: clamp(2rem, 6vw, 2.5rem);
-  --font-size-m: clamp(1rem, 4vw, 1.5rem);
+  --font-size-xl: clamp(5rem, 12vw, 8rem);
+  --font-size-l: clamp(2rem, 6vw, 4rem);
+  --font-size-m: clamp(1rem, 2vw, 1.25rem);
 
   /* colours */
   --color-main-neutral: #00a380;
@@ -31,7 +31,7 @@ html {
   background-color: var(--color-main-dark);
   color: var(--color-white-1);
   display: grid;
-  font-family: 'Space Mono', monospace;
+  font-family: 'Space Grotesk';
   font-size: 12px;
   height: 100%;
   place-items: center;
@@ -62,7 +62,7 @@ img {
 .title {
   color: var(--color-white-0);
   font-size: var(--font-size-xl);
-  letter-spacing: -5px;
+  letter-spacing: -0.35rem;
   margin-top: 0.5em;
 }
 
@@ -76,13 +76,20 @@ img {
 
 .link {
   background-color: var(--color-main-light);
-  border-radius: 6px;
+  border-radius: 8px;
+  border: 2px solid transparent;
   color: var(--color-main-dark);
   font-size: var(--font-size-m);
   font-weight: 700;
+  margin-bottom: -1px;
   margin-top: 4rem;
   padding: 10px 20px;
   text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.link:hover {
+  background-color: var(--color-main-neutral);
 }
 
 /* DATE */
@@ -90,7 +97,7 @@ img {
 .date {
   color: var(--color-main-neutral);
   font-size: var(--font-size-l);
-  letter-spacing: -1px;
+  letter-spacing: -0.15rem;
   margin-top: 3rem;
 }
 
@@ -102,20 +109,19 @@ img {
 
 /* COVER / ARTWORK */
 .main-container--cover {
-  margin-inline: auto;
   background-size: contain;
+  margin-inline: auto;
   width: clamp(100px, 100%, 600px);
-  object-fit: cover;
 }
 
 .main-container--cover > img {
-  width: 100%;
   border-radius: 10px;
+  width: 100%;
 }
 
 .artwork-info {
-  text-align: right;
   margin-top: 1em;
+  text-align: right;
 }
 
 .artwork-info--title {
@@ -130,11 +136,12 @@ img {
 
 .song {
   font-size: var(--font-size-m);
-  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 .song--title {
   color: var(--color-white-0);
+  font-weight: 500;
 }
 
 /* MEDIA QUERIES  */
@@ -146,13 +153,12 @@ img {
   }
 
   .main-container--songs {
-    width: 50%;
     margin-left: 2rem;
     margin-top: 0;
+    width: 50%;
   }
 
   .main-container--cover {
     width: 50%;
-    margin: auto 0;
   }
 }
