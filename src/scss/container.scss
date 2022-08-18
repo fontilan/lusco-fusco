@@ -1,0 +1,39 @@
+@use 'colours' as *;
+@use 'fonts' as *;
+
+.main-container {
+  margin-top: 3em;
+
+  &--cover {
+    width: clamp(100px, 100%, 495px);
+  }
+
+  &--cover > img {
+    border-radius: 10px;
+    width: 100%;
+  }
+
+  &--songs {
+    margin-top: 3em;
+    width: 100%;
+  }
+}
+
+.artwork-info {
+  margin-top: 1em;
+  text-align: right;
+
+  &--title {
+    font-style: italic;
+  }
+}
+
+.song {
+  font-size: $font-size-m;
+  margin-bottom: 0.5em;
+
+  &--title {
+    color: $color-white-0;
+    font-weight: 500;
+  }
+}
