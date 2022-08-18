@@ -1,0 +1,154 @@
+/* root rules */
+:root {
+  /* font sizes */
+  --font-size-xl: clamp(5.5rem, 12vw, 8rem);
+  --font-size-l: clamp(3rem, 6vw, 4rem);
+  --font-size-m: clamp(1rem, 2vw, 1.25rem);
+  /* colours */
+  --color-main-neutral: #00a380;
+  --color-main-light: #10ffcb;
+  --color-main-dark: #201d1e;
+  --color-white-1: #cfcfd8;
+  --color-white-0: #fbfbfe;
+}
+
+/* RESETS */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+/* MAIN */
+html {
+  background-color: var(--color-main-dark);
+  color: var(--color-white-1);
+  display: grid;
+  font-family: "Space Grotesk";
+  font-size: 12px;
+  height: 100%;
+  place-items: center;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  height: 100%;
+  line-height: 1.2;
+  padding: 0.5em 0.5em 4em 0.5em;
+}
+
+a {
+  display: block;
+  max-width: max-content;
+}
+
+img {
+  display: block;
+}
+
+.App {
+  max-width: 1025px;
+}
+
+/* TITLE AND SUBTITLE */
+.title {
+  color: var(--color-white-0);
+  font-size: var(--font-size-xl);
+  letter-spacing: -0.35rem;
+  margin-top: 0.5em;
+}
+
+.sub-title {
+  font-size: var(--font-size-m);
+  font-style: italic;
+  margin-top: 1rem;
+}
+
+/* SPOTIFY LINK */
+.link {
+  background-color: var(--color-main-light);
+  border-radius: 8px;
+  border: 2px solid transparent;
+  color: var(--color-main-dark);
+  font-size: var(--font-size-m);
+  font-weight: 700;
+  margin-bottom: -1px;
+  margin-top: 4rem;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.link:hover {
+  background-color: var(--color-main-neutral);
+}
+
+/* DATE */
+.date {
+  color: var(--color-main-neutral);
+  font-size: var(--font-size-l);
+  letter-spacing: -0.15rem;
+  margin-top: 3rem;
+}
+
+/* MAIN CONTAINER */
+.main-container {
+  margin-top: 3em;
+}
+
+/* COVER / ARTWORK */
+.main-container--cover {
+  width: clamp(100px, 100%, 495px);
+}
+
+.main-container--cover > img {
+  border-radius: 10px;
+  width: 100%;
+}
+
+.artwork-info {
+  margin-top: 1em;
+  text-align: right;
+}
+
+.artwork-info--title {
+  font-style: italic;
+}
+
+/* SONGS */
+.main-container--songs {
+  margin-top: 3em;
+  width: 100%;
+}
+
+.song {
+  font-size: var(--font-size-m);
+  margin-bottom: 0.5em;
+}
+
+.song--title {
+  color: var(--color-white-0);
+  font-weight: 500;
+}
+
+/* MEDIA QUERIES  */
+@media (min-width: 1025px) {
+  .main-container {
+    display: flex;
+    flex-direction: row;
+  }
+  .main-container--songs {
+    margin-left: 2rem;
+    margin-top: 0;
+    width: 50%;
+  }
+  .main-container--cover {
+    width: 50%;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
