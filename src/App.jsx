@@ -1,8 +1,8 @@
 import React from 'react';
 import { nanoid } from 'nanoid';
-import musicData from './data';
+import musicData from './assets/songsDB';
 import Songs from './Songs';
-import cover from './images/cover.jpg';
+import cover from './assets/cover.webp';
 
 const altText = "Peter Ilsted's artwork titled En druser";
 
