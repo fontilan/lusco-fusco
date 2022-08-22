@@ -87,6 +87,31 @@ h2 {
   isolation: isolate;
 }
 
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 48;
+  transition: all 0.5s;
+}
+
+.theme-button {
+  background-color: transparent;
+  border-radius: 50%;
+  border: none;
+  color: var(--color-text-1);
+  cursor: pointer;
+  float: inline-end;
+  height: 3em;
+  margin-top: -0.5em;
+  width: 3em;
+}
+.theme-button:hover {
+  background-color: hsla(0deg, 0%, 50%, 0.15);
+  color: var(--color-text-0);
+}
+
+.icon:active {
+  rotate: 270deg;
+}
+
 @media (min-width: 1025px) {
   .main {
     display: flex;
@@ -144,17 +169,6 @@ html {
   margin-top: 2em;
 }
 
-.theme-button {
-  background-color: transparent;
-  border-radius: 50%;
-  border: none;
-  cursor: pointer;
-  float: inline-end;
-  height: 3em;
-  margin-top: -0.5em;
-  width: 3em;
-}
-
 /*
   spotify link
 */
@@ -184,22 +198,6 @@ html {
   letter-spacing: -0.15rem;
   margin-top: 3rem;
   transition: color 0.75s;
-}
-
-/*
-  icons
-*/
-.material-symbols-outlined {
-  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 48;
-  transition: all 0.75s;
-}
-
-.icon__dark {
-  color: var(--color-text-0);
-}
-
-.icon__light {
-  color: var(--color-text-0);
 }
 
 /*# sourceMappingURL=index.css.map */
