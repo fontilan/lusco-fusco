@@ -36,8 +36,7 @@ function App() {
   return (
     <div className="wrapper" data-theme={theme}>
       <div className="app">
-        <div className="hero">
-          <h1 className="title">lusco-fusco</h1>
+        <div>
           <button className="theme-button" type="button" onClick={switchTheme}>
             {theme === 'dark' ? (
               <span
@@ -57,6 +56,7 @@ function App() {
               </span>
             )}
           </button>
+          <h1 className="title">lusco-fusco</h1>
           <p className="sub-title">
             an eclectic monthly music playlist, curated by Wojciech Gmuzdek
           </p>
