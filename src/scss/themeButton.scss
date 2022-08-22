@@ -1,0 +1,32 @@
+@use 'colours' as *;
+
+// default google material styling
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+  transition: all 0.5s;
+}
+
+// main button
+.theme-button {
+  background-color: transparent;
+  border-radius: 50%;
+  border: none;
+  color: $color-text-1;
+  cursor: pointer;
+  float: inline-end;
+  height: 3em;
+  margin-top: -0.5em;
+  width: 3em;
+
+  &:hover {
+    background-color: hsl(0 0% 50% / 0.15);
+    color: $color-text-0;
+  }
+}
+
+// icon
+.icon {
+  &:active {
+    rotate: 270deg;
+  }
+}
