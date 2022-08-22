@@ -5,6 +5,7 @@
 @use 'fonts' as *;
 @use 'container';
 @use 'resets';
+
 @use 'mediaQueries';
 
 /*
@@ -13,28 +14,30 @@
 html {
   font-family: $font-sans;
   font-size: 12px;
-  background-color: red;
 }
 
 .wrapper {
-  background-color: $color-main-dark;
-  color: $color-white-1;
+  background-color: $color-background;
+  color: $color-text-1;
   min-height: 100vh;
   display: grid;
   place-items: center;
+  transition: all 0.75s;
 }
 
 .app {
   max-width: 1025px;
+  padding: 2em 0.5em 4em 0.5em;
 }
 
 /*
   title
 */
 .title {
-  color: $color-white-0;
+  color: $color-text-0;
   font-size: $font-size-xl;
   letter-spacing: -0.35rem;
+  transition: color 0.75s;
 }
 
 .sub-title {
@@ -46,10 +49,10 @@ html {
   spotify link
 */
 .link {
-  background-color: $color-main-light;
+  background-color: $color-accent-light;
   border-radius: 8px;
   border: 2px solid transparent;
-  color: $color-main-dark;
+  color: hsl(336, 8%, 20%);
   font-size: $font-size-m;
   font-weight: 700;
   margin-bottom: -1px;
@@ -59,7 +62,7 @@ html {
   transition: background-color 0.3s;
 
   &:hover {
-    background-color: $color-main-neutral;
+    background-color: $color-accent-neutral;
   }
 }
 
@@ -67,8 +70,9 @@ html {
   date
 */
 .date {
-  color: $color-main-neutral;
+  color: $color-accent-neutral;
   font-size: $font-size-l;
   letter-spacing: -0.15rem;
   margin-top: 3rem;
+  transition: color 0.75s;
 }
