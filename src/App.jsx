@@ -44,7 +44,7 @@ function App() {
                 className="material-symbols-outlined icon icon__light"
                 title="Switch to light theme"
               >
-                brightness_4
+                brightness_7
               </span>
             ) : (
               <span
@@ -52,7 +52,7 @@ function App() {
                 className="material-symbols-outlined icon icon__dark"
                 title="Switch to dark theme"
               >
-                brightness_7
+                brightness_4
               </span>
             )}
           </button>
