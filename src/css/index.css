@@ -131,14 +131,28 @@ html {
 */
 .title {
   color: var(--color-text-0);
-  font-size: clamp(5.5rem, 12vw, 8rem);
+  font-size: clamp(5rem, 12vw, 8rem);
   letter-spacing: -0.35rem;
+  line-height: 1;
+  margin-top: 0.5em;
   transition: color 0.75s;
 }
 
 .sub-title {
   font-size: clamp(1rem, 2vw, 1.25rem);
   font-style: italic;
+  margin-top: 2em;
+}
+
+.theme-button {
+  background-color: transparent;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  float: inline-end;
+  height: 3em;
+  margin-top: -0.5em;
+  width: 3em;
 }
 
 /*
@@ -170,6 +184,22 @@ html {
   letter-spacing: -0.15rem;
   margin-top: 3rem;
   transition: color 0.75s;
+}
+
+/*
+  icons
+*/
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 48;
+  transition: all 0.75s;
+}
+
+.icon__dark {
+  color: var(--color-text-0);
+}
+
+.icon__light {
+  color: var(--color-text-0);
 }
 
 /*# sourceMappingURL=index.css.map */
