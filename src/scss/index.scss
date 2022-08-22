@@ -11,19 +11,20 @@
   main elements
 */
 html {
-  background-color: $color-main-dark;
-  color: $color-white-1;
-  display: grid;
   font-family: $font-sans;
   font-size: 12px;
+  background-color: red;
+}
+
+.wrapper {
+  background-color: $color-main-dark;
+  color: $color-white-1;
+  min-height: 100vh;
+  display: grid;
   place-items: center;
 }
 
-body {
-  padding: 0.5em 0.5em 4em 0.5em;
-}
-
-.App {
+.app {
   max-width: 1025px;
 }
 
@@ -34,13 +35,11 @@ body {
   color: $color-white-0;
   font-size: $font-size-xl;
   letter-spacing: -0.35rem;
-  margin-top: 0.5em;
 }
 
 .sub-title {
   font-size: $font-size-m;
   font-style: italic;
-  margin-top: 1rem;
 }
 
 /*
