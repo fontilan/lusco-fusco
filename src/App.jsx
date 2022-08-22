@@ -1,8 +1,8 @@
 import React from 'react';
-
 import useLocalStorage from 'use-local-storage';
 import { nanoid } from 'nanoid';
 
+import Button from './Button';
 import Songs from './Songs';
 import cover from './assets/cover.webp';
 import musicData from './assets/songsDB';
@@ -37,25 +37,7 @@ function App() {
     <div className="wrapper" data-theme={theme}>
       <div className="app">
         <div>
-          <button className="theme-button" type="button" onClick={switchTheme}>
-            {theme === 'dark' ? (
-              <span
-                aria-label="Switch to light theme"
-                className="material-symbols-outlined icon icon__light"
-                title="Switch to light theme"
-              >
-                brightness_7
-              </span>
-            ) : (
-              <span
-                aria-label="Switch to dark theme"
-                className="material-symbols-outlined icon icon__dark"
-                title="Switch to dark theme"
-              >
-                brightness_4
-              </span>
-            )}
-          </button>
+          <Button switchTheme={switchTheme} theme={theme} />
           <h1 className="title">lusco-fusco</h1>
           <p className="sub-title">
             an eclectic monthly music playlist, curated by Wojciech Gmuzdek
