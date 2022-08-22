@@ -138,9 +138,10 @@ h2 {
   border: none;
   color: var(--color-text-1);
   cursor: pointer;
-  float: inline-end;
+  float: right;
   height: 3em;
   margin-top: -0.5em;
+  padding-top: 0.175em;
   width: 3em;
 }
 .theme-button:hover {
