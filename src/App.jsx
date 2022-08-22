@@ -34,28 +34,30 @@ function App() {
   };
 
   return (
-    <div className="App" data-theme={theme}>
-      <div>
-        <h1 className="title">lusco-fusco</h1>
-        <p className="sub-title">
-          an eclectic monthly music playlist, curated by Wojciech Gmuzdek
-        </p>
-      </div>
-      <a className="link" href={spotifyLink} target="_blank" rel="noreferrer">
-        Listen on Spotify
-      </a>
-      <button type="button" onClick={switchTheme}>
-        Switch to {theme === 'dark' ? 'light' : 'dark'} theme
-      </button>
-      <h2 className="date">{month}</h2>
-      <div className="main">
-        <div className="main__cover">
-          <img src={cover} alt={altText} />
-          <p className="cover-info">
-            Peter Ilsted, <span className="cover-info__title">En druser</span>
+    <div className="wrapper" data-theme={theme}>
+      <div className="app">
+        <div>
+          <h1 className="title">lusco-fusco</h1>
+          <p className="sub-title">
+            an eclectic monthly music playlist, curated by Wojciech Gmuzdek
           </p>
         </div>
-        <div className="main__songs">{songs}</div>
+        <a className="link" href={spotifyLink} target="_blank" rel="noreferrer">
+          Listen on Spotify
+        </a>
+        <button type="button" onClick={switchTheme}>
+          Switch to {theme === 'dark' ? 'light' : 'dark'} theme
+        </button>
+        <h2 className="date">{month}</h2>
+        <div className="main">
+          <div className="main__cover">
+            <img src={cover} alt={altText} />
+            <p className="cover-info">
+              Peter Ilsted, <span className="cover-info__title">En druser</span>
+            </p>
+          </div>
+          <div className="main__songs">{songs}</div>
+        </div>
       </div>
     </div>
   );
