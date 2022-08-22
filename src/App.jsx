@@ -36,8 +36,27 @@ function App() {
   return (
     <div className="wrapper" data-theme={theme}>
       <div className="app">
-        <div>
+        <div className="hero">
           <h1 className="title">lusco-fusco</h1>
+          <button className="theme-button" type="button" onClick={switchTheme}>
+            {theme === 'dark' ? (
+              <span
+                aria-label="Switch to light theme"
+                className="material-symbols-outlined icon icon__light"
+                title="Switch to light theme"
+              >
+                brightness_4
+              </span>
+            ) : (
+              <span
+                aria-label="Switch to dark theme"
+                className="material-symbols-outlined icon icon__dark"
+                title="Switch to dark theme"
+              >
+                brightness_7
+              </span>
+            )}
+          </button>
           <p className="sub-title">
             an eclectic monthly music playlist, curated by Wojciech Gmuzdek
           </p>
@@ -45,9 +64,6 @@ function App() {
         <a className="link" href={spotifyLink} target="_blank" rel="noreferrer">
           Listen on Spotify
         </a>
-        <button type="button" onClick={switchTheme}>
-          Switch to {theme === 'dark' ? 'light' : 'dark'} theme
-        </button>
         <h2 className="date">{month}</h2>
         <div className="main">
           <div className="main__cover">
