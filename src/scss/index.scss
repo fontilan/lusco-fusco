@@ -1,17 +1,11 @@
-/*
-  imports
-*/
 @use 'colours' as *;
 @use 'container';
 @use 'fonts' as *;
+@use 'hero';
 @use 'resets';
 @use 'themeButton';
-
 @use 'mediaQueries';
 
-/*
-  main elements
-*/
 html {
   font-family: $font-sans;
   font-size: 12px;
@@ -29,54 +23,4 @@ html {
 .app {
   max-width: 1025px;
   padding: 2em 0.5em 4em 0.5em;
-}
-
-/*
-  title
-*/
-.title {
-  color: $color-text-0;
-  font-size: $font-size-xl;
-  letter-spacing: -0.35rem;
-  line-height: 1;
-  margin-top: 0.5em;
-  transition: color 0.75s;
-}
-
-.sub-title {
-  font-size: $font-size-m;
-  font-style: italic;
-  margin-top: 2em;
-}
-
-/*
-  spotify link
-*/
-.link {
-  background-color: $color-accent-light;
-  border-radius: 8px;
-  border: 2px solid transparent;
-  color: hsl(336, 8%, 20%);
-  font-size: $font-size-m;
-  font-weight: 700;
-  margin-bottom: -1px;
-  margin-top: 4rem;
-  padding: 10px 20px;
-  text-decoration: none;
-  transition: background-color 0.3s;
-
-  &:hover {
-    background-color: $color-accent-neutral;
-  }
-}
-
-/*
-  date
-*/
-.date {
-  color: $color-accent-neutral;
-  font-size: $font-size-l;
-  letter-spacing: -0.15rem;
-  margin-top: 3rem;
-  transition: color 0.75s;
 }

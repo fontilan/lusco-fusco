@@ -47,6 +47,46 @@
   transition: color 0.75s;
 }
 
+.title {
+  color: var(--color-text-0);
+  font-size: clamp(5rem, 12vw, 8rem);
+  letter-spacing: -0.35rem;
+  line-height: 1;
+  margin-top: 0.5em;
+  transition: color 0.75s;
+}
+
+.sub-title {
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  font-style: italic;
+  margin-top: 2em;
+}
+
+.link {
+  background-color: var(--color-accent-light);
+  border-radius: 8px;
+  border: 2px solid transparent;
+  color: hsl(336deg, 8%, 20%);
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  font-weight: 700;
+  margin-bottom: -1px;
+  margin-top: 4rem;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+.link:hover {
+  background-color: var(--color-accent-neutral);
+}
+
+.date {
+  color: var(--color-accent-neutral);
+  font-size: clamp(3rem, 6vw, 4rem);
+  letter-spacing: -0.15rem;
+  margin-top: 3rem;
+  transition: color 0.75s;
+}
+
 /*
   Josh's Custom CSS Reset
   https://www.joshwcomeau.com/css/custom-css-reset/
@@ -126,12 +166,6 @@ h2 {
     width: 50%;
   }
 }
-/*
-  imports
-*/
-/*
-  main elements
-*/
 html {
   font-family: "Space Grotesk", sans-serif;
   font-size: 12px;
@@ -149,55 +183,6 @@ html {
 .app {
   max-width: 1025px;
   padding: 2em 0.5em 4em 0.5em;
-}
-
-/*
-  title
-*/
-.title {
-  color: var(--color-text-0);
-  font-size: clamp(5rem, 12vw, 8rem);
-  letter-spacing: -0.35rem;
-  line-height: 1;
-  margin-top: 0.5em;
-  transition: color 0.75s;
-}
-
-.sub-title {
-  font-size: clamp(1rem, 2vw, 1.25rem);
-  font-style: italic;
-  margin-top: 2em;
-}
-
-/*
-  spotify link
-*/
-.link {
-  background-color: var(--color-accent-light);
-  border-radius: 8px;
-  border: 2px solid transparent;
-  color: hsl(336deg, 8%, 20%);
-  font-size: clamp(1rem, 2vw, 1.25rem);
-  font-weight: 700;
-  margin-bottom: -1px;
-  margin-top: 4rem;
-  padding: 10px 20px;
-  text-decoration: none;
-  transition: background-color 0.3s;
-}
-.link:hover {
-  background-color: var(--color-accent-neutral);
-}
-
-/*
-  date
-*/
-.date {
-  color: var(--color-accent-neutral);
-  font-size: clamp(3rem, 6vw, 4rem);
-  letter-spacing: -0.15rem;
-  margin-top: 3rem;
-  transition: color 0.75s;
 }
 
 /*# sourceMappingURL=index.css.map */
