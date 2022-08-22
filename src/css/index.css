@@ -1,17 +1,17 @@
 :root {
-  --color-main-neutral: hsl(167, 100%, 32%);
-  --color-main-light: hsl(167, 100%, 53%);
-  --color-main-dark: hsl(336, 8%, 12%);
-  --color-white-0: hsl(240, 60%, 99%);
-  --color-white-1: hsl(240, 10%, 83%);
+  --color-background: hsl(336, 8%, 12%);
+  --color-accent-neutral: hsl(167, 100%, 32%);
+  --color-accent-light: hsl(167, 100%, 53%);
+  --color-text-0: hsl(240, 60%, 99%);
+  --color-text-1: hsl(240, 10%, 83%);
 }
 
 [data-theme=light] {
-  --color-main-neutral: hsl(167, 100%, 22%);
-  --color-main-light: hsl(167, 100%, 53%);
-  --color-main-dark: hsl(0, 0%, 100%);
-  --color-white-0: hsl(261, 53%, 15%);
-  --color-white-1: hsl(240, 15%, 31%);
+  --color-background: hsl(0, 0%, 100%);
+  --color-accent-neutral: hsl(167, 100%, 22%);
+  --color-accent-light: hsl(167, 100%, 43%);
+  --color-text-0: hsl(336, 8%, 20%);
+  --color-text-1: hsl(336, 8%, 30%);
 }
 
 .main {
@@ -42,8 +42,9 @@
   margin-bottom: 0.5em;
 }
 .song__title {
-  color: var(--color-white-0);
+  color: var(--color-text-0);
   font-weight: 500;
+  transition: color 0.75s;
 }
 
 /*
@@ -109,28 +110,30 @@ h2 {
 html {
   font-family: "Space Grotesk", sans-serif;
   font-size: 12px;
-  background-color: red;
 }
 
 .wrapper {
-  background-color: var(--color-main-dark);
-  color: var(--color-white-1);
+  background-color: var(--color-background);
+  color: var(--color-text-1);
   min-height: 100vh;
   display: grid;
   place-items: center;
+  transition: all 0.75s;
 }
 
 .app {
   max-width: 1025px;
+  padding: 2em 0.5em 4em 0.5em;
 }
 
 /*
   title
 */
 .title {
-  color: var(--color-white-0);
+  color: var(--color-text-0);
   font-size: clamp(5.5rem, 12vw, 8rem);
   letter-spacing: -0.35rem;
+  transition: color 0.75s;
 }
 
 .sub-title {
@@ -142,10 +145,10 @@ html {
   spotify link
 */
 .link {
-  background-color: var(--color-main-light);
+  background-color: var(--color-accent-light);
   border-radius: 8px;
   border: 2px solid transparent;
-  color: var(--color-main-dark);
+  color: hsl(336deg, 8%, 20%);
   font-size: clamp(1rem, 2vw, 1.25rem);
   font-weight: 700;
   margin-bottom: -1px;
@@ -155,17 +158,18 @@ html {
   transition: background-color 0.3s;
 }
 .link:hover {
-  background-color: var(--color-main-neutral);
+  background-color: var(--color-accent-neutral);
 }
 
 /*
   date
 */
 .date {
-  color: var(--color-main-neutral);
+  color: var(--color-accent-neutral);
   font-size: clamp(3rem, 6vw, 4rem);
   letter-spacing: -0.15rem;
   margin-top: 3rem;
+  transition: color 0.75s;
 }
 
 /*# sourceMappingURL=index.css.map */
