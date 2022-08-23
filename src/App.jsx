@@ -5,11 +5,11 @@ import Hero from './components/Hero';
 import Main from './components/Main';
 import cover from './assets/cover.webp';
 import coverData from './assets/coverData';
-import musicData from './assets/songsDB';
+import songsData from './assets/songsData';
 
 function App() {
-  const month = musicData.date;
-  const spotifyLink = musicData.link;
+  const month = songsData.date;
+  const spotifyLink = songsData.link;
 
   const coverAuthor = coverData.author;
   const coverTitle = coverData.title;

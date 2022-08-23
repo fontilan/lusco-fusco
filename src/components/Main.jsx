@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 import { nanoid } from 'nanoid';
 
 import Songs from './Songs';
-import musicData from '../assets/songsDB';
+import songsData from '../assets/songsData';
 
-const songs = musicData.songs.map((song) => (
+const songs = songsData.songs.map((song) => (
   <Songs author={song.author} title={song.title} key={nanoid()} />
 ));
 
