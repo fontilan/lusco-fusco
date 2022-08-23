@@ -1,18 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Songs({ author, title }) {
+function Songs({ artist, title }) {
+  const searchQuery = `https://www.google.com/search?q=${artist}+${title}`;
+
   return (
-    <p className="song">
-      <span>{author}</span>
+    <a href={searchQuery} className="song">
+      <span>{artist}</span>
       &nbsp;—&nbsp;
       <span className="song__title">{title}</span>
-    </p>
+    </a>
   );
 }
 
 Songs.propTypes = {
-  author: PropTypes.string.isRequired,
+  artist: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
 };
 
