@@ -1,4 +1,4 @@
-const musicData = {
+const songsData = {
   date: 'August 2022',
   link: 'https://open.spotify.com/playlist/7Lz7wRpOszolsTFfFe6VmB?si=0c82ea7dcb844265',
 
@@ -85,4 +85,4 @@ const musicData = {
     },
   ],
 };
-export default musicData;
+export default songsData;
