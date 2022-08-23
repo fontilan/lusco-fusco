@@ -4,85 +4,86 @@ const songsData = {
 
   songs: [
     {
-      author: 'Raffy Bushman',
       title: 'Olympus',
+      artist: 'Raffy Bushman',
     },
     {
-      author: 'Gwenno',
       title: 'Anima',
+      artist: 'Gwenno',
     },
     {
-      author: 'jennylee',
       title: 'Tickles',
+      artist: 'jennylee',
     },
     {
-      author: 'Cosmic Analog Ensemble',
       title: 'À bras le coeur',
+      artist: 'Cosmic Analog Ensemble',
     },
     {
-      author: 'Guided By Voices',
       title: 'Echos Myron',
+      artist: 'Guided By Voices',
     },
     {
-      author: 'Boof',
       title: 'Chicken With Waffles',
+      artist: 'Boof',
     },
     {
-      author: 'Kadhja Bonet',
       title: 'Dear Gina',
+      artist: 'Kadhja Bonet',
     },
     {
-      author: 'Manfredo Fest',
       title: 'Braziliana Nº1',
+      artist: 'Manfredo Fest',
     },
     {
-      author: 'The Space Lady',
       title: 'Major Tom',
+      artist: 'The Space Lady',
     },
     {
-      author: 'Sun Ra, Sun Ra & His Arkestra',
       title: "That's How I Feel - Remastered",
+      artist: 'Sun Ra, Sun Ra & His Arkestra',
     },
     {
-      author: 'Earl Sweatshirt',
       title: '2010',
+      artist: 'Earl Sweatshirt',
     },
     {
-      author: 'Hala Strana',
       title: 'Stouthrief',
+      artist: 'Hala Strana',
     },
     {
-      author: 'Caterina Barbieri, Walter Zanetti',
       title: 'Fantas for Electric Guitar',
+      artist: 'Caterina Barbieri, Walter Zanetti',
     },
     {
-      author: 'Dionne Warwick',
       title: "You're Gonna Need Me",
+      artist: 'Dionne Warwick',
     },
     {
-      author: 'Laboratorium, Janusz Grzywacz',
       title: 'Zdrowie na budowie',
+      artist: 'Laboratorium, Janusz Grzywacz',
     },
     {
-      author: 'Edan, Insight Innovates',
       title: 'Funky Voltron',
+      artist: 'Edan, Insight Innovates',
     },
     {
-      author: 'Time Wharp',
       title: 'Mixo World',
+      artist: 'Time Wharp',
     },
     {
-      author: 'PVA',
       title: 'Hero Man',
+      artist: 'PVA',
     },
     {
-      author: 'Radioactive Man',
       title: 'Goodnight Morton',
+      artist: 'Radioactive Man',
     },
     {
-      author: 'Trees',
       title: 'The Garden of Jane Delawney',
+      artist: 'Trees',
     },
   ],
 };
+
 export default songsData;
