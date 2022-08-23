@@ -2,10 +2,10 @@ import React from 'react';
 import useLocalStorage from 'use-local-storage';
 import { nanoid } from 'nanoid';
 
-import Button from './Button';
-import Songs from './Songs';
+import Songs from './components/Songs';
 import cover from './assets/cover.webp';
 import musicData from './assets/songsDB';
+import Hero from './components/Hero';
 
 const altText = "Peter Ilsted's artwork titled En druser";
 
@@ -36,17 +36,12 @@ function App() {
   return (
     <div className="wrapper" data-theme={theme}>
       <div className="app">
-        <div>
-          <Button switchTheme={switchTheme} theme={theme} />
-          <h1 className="title">lusco-fusco</h1>
-          <p className="sub-title">
-            an eclectic monthly music playlist, curated by Wojciech Gmuzdek
-          </p>
-        </div>
-        <a className="link" href={spotifyLink} target="_blank" rel="noreferrer">
-          Listen on Spotify
-        </a>
-        <h2 className="date">{month}</h2>
+        <Hero
+          month={month}
+          spotifyLink={spotifyLink}
+          switchTheme={switchTheme}
+          theme={theme}
+        />
         <div className="main">
           <div className="main__cover">
             <img src={cover} alt={altText} />
