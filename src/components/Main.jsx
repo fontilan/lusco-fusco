@@ -6,7 +6,7 @@ import Songs from './Songs';
 import songsData from '../assets/songsData';
 
 const songs = songsData.songs.map((song) => (
-  <Songs author={song.author} title={song.title} key={nanoid()} />
+  <Songs artist={song.artist} title={song.title} key={nanoid()} />
 ));
 
 function Main({ altText, cover, coverAuthor, coverTitle }) {
