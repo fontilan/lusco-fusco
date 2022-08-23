@@ -1,5 +1,6 @@
-/* eslint-disable react/prop-types */
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import Button from './Button';
 
 function Hero({ month, spotifyLink, switchTheme, theme }) {
@@ -19,5 +20,12 @@ function Hero({ month, spotifyLink, switchTheme, theme }) {
     </div>
   );
 }
+
+Hero.propTypes = {
+  month: PropTypes.string.isRequired,
+  spotifyLink: PropTypes.string.isRequired,
+  switchTheme: PropTypes.func.isRequired,
+  theme: PropTypes.string.isRequired,
+};
 
 export default Hero;
