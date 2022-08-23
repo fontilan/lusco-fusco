@@ -29,12 +29,20 @@
 }
 
 .song {
+  border-radius: 5px;
+  color: $color-text-1;
   font-size: $font-size-m;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.25em;
+  padding: 0.125em 0.5em;
+  text-decoration: none;
 
   &__title {
     color: $color-text-0;
     font-weight: 500;
     transition: color 0.75s;
+  }
+
+  &:hover {
+    background-color: hsl(0 0% 50% / 0.15);
   }
 }
