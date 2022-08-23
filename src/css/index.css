@@ -14,39 +14,6 @@
   --color-text-1: hsl(336, 8%, 30%);
 }
 
-.main {
-  margin-top: 3em;
-}
-.main__cover {
-  width: clamp(100px, 100%, 495px);
-}
-.main__cover > img {
-  border-radius: 10px;
-  width: 100%;
-}
-.main__songs {
-  margin-top: 3em;
-  width: 100%;
-}
-
-.cover-info {
-  margin-top: 1em;
-  text-align: right;
-}
-.cover-info__title {
-  font-style: italic;
-}
-
-.song {
-  font-size: clamp(1rem, 2vw, 1.25rem);
-  margin-bottom: 0.5em;
-}
-.song__title {
-  color: var(--color-text-0);
-  font-weight: 500;
-  transition: color 0.75s;
-}
-
 .title {
   color: var(--color-text-0);
   font-size: clamp(5rem, 12vw, 8rem);
@@ -84,6 +51,39 @@
   font-size: clamp(3rem, 6vw, 4rem);
   letter-spacing: -0.15rem;
   margin-top: 3rem;
+  transition: color 0.75s;
+}
+
+.main {
+  margin-top: 3em;
+}
+.main__cover {
+  width: clamp(100px, 100%, 495px);
+}
+.main__cover > img {
+  border-radius: 10px;
+  width: 100%;
+}
+.main__songs {
+  margin-top: 3em;
+  width: 100%;
+}
+
+.cover-info {
+  margin-top: 1em;
+  text-align: right;
+}
+.cover-info__title {
+  font-style: italic;
+}
+
+.song {
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  margin-bottom: 0.5em;
+}
+.song__title {
+  color: var(--color-text-0);
+  font-weight: 500;
   transition: color 0.75s;
 }
 
