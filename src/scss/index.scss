@@ -1,10 +1,10 @@
+@use '_resets';
 @use 'colours' as *;
 @use 'fonts' as *;
 @use 'hero';
 @use 'main';
-@use 'resets';
 @use 'themeButton';
-@use 'mediaQueries';
+@use '~mediaQueries';
 
 html {
   font-family: $font-sans;
