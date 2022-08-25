@@ -2,10 +2,16 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 function Songs({ artist, title }) {
-  const searchQuery = `https://www.google.com/search?q=${artist}+${title}`;
+  // create a string in the form of `artist name song title` as a basis for a Google search. Then encode it to ensure the search query is valid
+  const query = encodeURIComponent(artist.concat(' ', title));
 
   return (
-    <a href={searchQuery} target="_blank" rel="noreferrer" className="song">
+    <a
+      href={`https://www.google.com/search?q=${query}`}
+      target="_blank"
+      rel="noreferrer"
+      className="song"
+    >
       <span>{artist}</span>
       &nbsp;—&nbsp;
       <span className="song__title">{title}</span>
