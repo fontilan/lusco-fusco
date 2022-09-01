@@ -1,6 +1,6 @@
 const coverData = {
-  author: 'Peter Ilsted',
-  title: 'En druser',
+  author: 'Henri Somm',
+  title: 'A Parisienne Outside the Moulin de la Galette',
 };
 
 export default coverData;
