@@ -1,27 +1,27 @@
-// default colours (dark theme is default)
+// default colors (dark theme is default)
 :root {
   // shade of the background color
   --color-back-0: #1a1f23;
 
-  // shades of the main colour
+  // shades of the main color
   --color-main-0: #c0945d;
   --color-main-1: #cca77b;
 
-  // shades of the text colour
+  // shades of the text color
   --color-text-0: #fbfbfe;
   --color-text-1: #cfcfd8;
 }
 
-// colours for the light theme
+// colors for the light theme
 [data-theme='light'] {
   // shade of the background color
   --color-back-0: #ffffff;
 
-  // shades of the main colour
+  // shades of the main color
   --color-main-0: #a2753f;
   --color-main-1: #c0945d;
 
-  // shades of the text colour
+  // shades of the text color
   --color-text-0: #372f32;
   --color-text-1: #53464b;
 }
