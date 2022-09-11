@@ -6,11 +6,11 @@
 
   &__cover {
     width: clamp(100px, 100%, 495px);
-  }
 
-  &__cover > img {
-    border-radius: 10px;
-    width: 100%;
+    > img {
+      border-radius: 10px;
+      width: 100%;
+    }
   }
 
   &__songs {
