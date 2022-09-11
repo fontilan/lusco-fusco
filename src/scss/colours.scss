@@ -1,10 +1,11 @@
 // default colours (dark theme is default)
 :root {
-  --color-background: #1a1f23;
+  // shade of the background color
+  --color-back-0: #1a1f23;
 
-  // shades of the accent colour
-  --color-accent-neutral: #c0945d;
-  --color-accent-light: #cca77b;
+  // shades of the main colour
+  --color-main-0: #c0945d;
+  --color-main-1: #cca77b;
 
   // shades of the text colour
   --color-text-0: #fbfbfe;
@@ -13,11 +14,12 @@
 
 // colours for the light theme
 [data-theme='light'] {
-  --color-background: #ffffff;
+  // shade of the background color
+  --color-back-0: #ffffff;
 
-  // shades of the accent colour
-  --color-accent-neutral: #a2753f;
-  --color-accent-light: #c0945d;
+  // shades of the main colour
+  --color-main-0: #a2753f;
+  --color-main-1: #c0945d;
 
   // shades of the text colour
   --color-text-0: #372f32;
@@ -25,9 +27,10 @@
 }
 
 // due to how data-* attributes work with CSS we have to use the vanilla var() variables, and only then can we reuse them as the $ SASS variables in other parts of the app
-$color-accent-neutral: var(--color-accent-neutral);
-$color-accent-light: var(--color-accent-light);
-$color-background: var(--color-background);
+$color-back-0: var(--color-back-0);
+
+$color-main-0: var(--color-main-0);
+$color-main-1: var(--color-main-1);
 
 $color-text-0: var(--color-text-0);
 $color-text-1: var(--color-text-1);

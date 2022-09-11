@@ -39,17 +39,17 @@ h2 {
 }
 
 :root {
-  --color-background: #1a1f23;
-  --color-accent-neutral: #c0945d;
-  --color-accent-light: #cca77b;
+  --color-back-0: #1a1f23;
+  --color-main-0: #c0945d;
+  --color-main-1: #cca77b;
   --color-text-0: #fbfbfe;
   --color-text-1: #cfcfd8;
 }
 
 [data-theme=light] {
-  --color-background: #ffffff;
-  --color-accent-neutral: #a2753f;
-  --color-accent-light: #c0945d;
+  --color-back-0: #ffffff;
+  --color-main-0: #a2753f;
+  --color-main-1: #c0945d;
   --color-text-0: #372f32;
   --color-text-1: #53464b;
 }
@@ -70,7 +70,7 @@ h2 {
 }
 
 .link {
-  background-color: var(--color-accent-light);
+  background-color: var(--color-main-1);
   border-radius: 8px;
   border: 2px solid transparent;
   color: hsl(336deg, 8%, 20%);
@@ -83,11 +83,11 @@ h2 {
   transition: background-color 0.3s;
 }
 .link:hover {
-  background-color: var(--color-accent-neutral);
+  background-color: var(--color-main-0);
 }
 
 .date {
-  color: var(--color-accent-neutral);
+  color: var(--color-main-0);
   font-size: clamp(3rem, 6vw, 4rem);
   letter-spacing: -0.15rem;
   margin-top: 3rem;
@@ -180,7 +180,7 @@ html {
 }
 
 .wrapper {
-  background-color: var(--color-background);
+  background-color: var(--color-back-0);
   color: var(--color-text-1);
   min-height: 100vh;
   display: grid;

@@ -20,7 +20,7 @@
 
 // spotify link
 .link {
-  background-color: $color-accent-light;
+  background-color: $color-main-1;
   border-radius: 8px;
   border: 2px solid transparent;
   color: hsl(336, 8%, 20%);
@@ -33,13 +33,13 @@
   transition: background-color 0.3s;
 
   &:hover {
-    background-color: $color-accent-neutral;
+    background-color: $color-main-0;
   }
 }
 
 // date
 .date {
-  color: $color-accent-neutral;
+  color: $color-main-0;
   font-size: $font-size-l;
   letter-spacing: -0.15rem;
   margin-top: 3rem;
