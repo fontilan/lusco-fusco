@@ -56,15 +56,14 @@ h2 {
 
 .title {
   color: var(--color-text-0);
-  font-size: clamp(5rem, 12vw, 8rem);
+  font-size: clamp(4rem, 12vw, 5rem);
   letter-spacing: -0.35rem;
   line-height: 1;
-  margin-top: 0.5em;
   transition: color 0.75s;
 }
 
 .sub-title {
-  font-size: clamp(1rem, 2vw, 1.25rem);
+  font-size: clamp(1rem, 3vw, 1.25rem);
   font-style: italic;
   margin-top: 2em;
 }
@@ -74,7 +73,7 @@ h2 {
   border-radius: 8px;
   border: 2px solid transparent;
   color: hsl(336deg, 8%, 20%);
-  font-size: clamp(1rem, 2vw, 1.25rem);
+  font-size: clamp(1rem, 3vw, 1.25rem);
   font-weight: 700;
   margin-bottom: -1px;
   margin-top: 4rem;
@@ -88,7 +87,7 @@ h2 {
 
 .date {
   color: var(--color-main-0);
-  font-size: clamp(3rem, 6vw, 4rem);
+  font-size: clamp(2.5rem, 7.25vw, 3rem);
   letter-spacing: -0.15rem;
   margin-top: 3rem;
   transition: color 0.75s;
@@ -120,7 +119,7 @@ h2 {
 .song {
   border-radius: 5px;
   color: var(--color-text-1);
-  font-size: clamp(1rem, 2vw, 1.25rem);
+  font-size: clamp(1rem, 3vw, 1.25rem);
   margin-bottom: 0.25em;
   padding: 0.125em;
   text-decoration: none;
@@ -189,8 +188,8 @@ html {
 }
 
 .app {
-  max-width: 1025px;
-  padding: 2em 0.5em 4em 0.5em;
+  max-width: 1080px;
+  padding: clamp(0.125em, 3vw, 2em);
 }
 
 /*# sourceMappingURL=index.css.map */
