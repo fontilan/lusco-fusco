@@ -21,6 +21,6 @@ html {
 }
 
 .app {
-  max-width: 1025px;
-  padding: 2em 0.5em 4em 0.5em;
+  max-width: 1080px;
+  padding: clamp(0.125em, 3vw, 2em);
 }
