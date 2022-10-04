@@ -39,19 +39,19 @@ h2 {
 }
 
 :root {
-  --color-back-0: #1a1f23;
-  --color-main-0: #c0945d;
-  --color-main-1: #cca77b;
-  --color-text-0: #fbfbfe;
-  --color-text-1: #cfcfd8;
+  --color-back-0: hsl(72, 24%, 4%);
+  --color-main-0: hsl(25, 53%, 55%);
+  --color-main-1: hsl(25, 53%, 65%);
+  --color-text-0: hsl(356, 71%, 95%);
+  --color-text-1: hsl(356, 20%, 80%);
 }
 
 [data-theme=light] {
-  --color-back-0: #ffffff;
-  --color-main-0: #a2753f;
-  --color-main-1: #c0945d;
-  --color-text-0: #372f32;
-  --color-text-1: #53464b;
+  --color-back-0: hsl(0, 0%, 98%);
+  --color-main-0: hsl(25, 53%, 50%);
+  --color-main-1: hsl(25, 53%, 40%);
+  --color-text-0: hsl(356, 71%, 5%);
+  --color-text-1: hsl(356, 71%, 15%);
 }
 
 .title {
@@ -72,7 +72,7 @@ h2 {
   background-color: var(--color-main-1);
   border-radius: 8px;
   border: 2px solid transparent;
-  color: hsl(336deg, 8%, 20%);
+  color: var(--color-back-0);
   font-size: clamp(1rem, 3vw, 1.25rem);
   font-weight: 700;
   margin-bottom: -1px;
