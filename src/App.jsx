@@ -10,22 +10,19 @@ import songsData from './assets/songsData';
 function App() {
   const month = songsData.date;
   const spotifyLink = songsData.link;
-
   const coverAuthor = coverData.author;
   const coverTitle = coverData.title;
+  const coverLink = coverData.link;
   const altText = `${coverAuthor}'s artwork titled ${coverTitle}`;
 
-  // check if the user prefers dark theme
+  // Theme - detect
   const defaultDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-  // use dark theme if the user prefers it, otherwise use dark theme anyway.
-  // (theme variable is null initially, so instead we use the second, default value. After it's set and saved with the switchTheme function it will be used after refresh / next visit)
+  // Theme - set
   const [theme, setTheme] = useLocalStorage(
     'theme',
     defaultDark ? 'dark' : 'dark',
   );
-
-  // switch the theme variable from light to dark and vice versa & save it in Local Storage
+  // Theme - switch
   const switchTheme = () => {
     const newTheme = theme === 'light' ? 'dark' : 'light';
     setTheme(newTheme);
@@ -44,6 +41,7 @@ function App() {
           altText={altText}
           cover={cover}
           coverAuthor={coverAuthor}
+          coverLink={coverLink}
           coverTitle={coverTitle}
         />
       </div>
