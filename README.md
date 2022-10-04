@@ -6,4 +6,4 @@ lusco-fusco (Portuguese for "twilight") is the name of my monthly-updated Spotif
 I love discovering new music, so this monthly commitment keeps me motivated to stay up to date with new releases.
 The playlist somehow gained a few anonymous followers, so I have to keep going, I can't let them down! :smile:
 
-https://fontilan.github.io/lusco-fusco/
+https://lusco-fusco.netlify.app/
