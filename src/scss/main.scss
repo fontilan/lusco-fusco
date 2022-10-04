@@ -7,7 +7,7 @@
   &__cover {
     width: clamp(100px, 100%, 495px);
 
-    > img {
+    > a > img {
       border-radius: 10px;
       width: 100%;
     }

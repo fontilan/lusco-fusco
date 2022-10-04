@@ -99,7 +99,7 @@ h2 {
 .main__cover {
   width: clamp(100px, 100%, 495px);
 }
-.main__cover > img {
+.main__cover > a > img {
   border-radius: 10px;
   width: 100%;
 }
