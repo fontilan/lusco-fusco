@@ -1,6 +1,6 @@
 const coverData = {
-  author: 'Henri Somm',
-  title: 'A Parisienne Outside the Moulin de la Galette',
+  author: 'Jan Sobieski',
+  title: 'Castellan’s Daughter',
 };
 
 export default coverData;
