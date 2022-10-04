@@ -9,7 +9,7 @@ const songsData = {
     },
     {
       title: 'Go Down Softly',
-      artist: 'Fievel is Glauque',
+      artist: 'Fievel Is Glauque',
     },
     {
       title: 'Suíte 305',
