@@ -1,7 +1,7 @@
 const coverData = {
-  author: 'Jan Sobieski',
-  title: 'Castellan’s Daughter',
-  link: 'https://artvee.com/dl/castellans-daughter/',
+  author: 'Alexandre Struys',
+  title: 'Peut-être',
+  link: 'https://artvee.com/dl/peut-etre/',
 };
 
 export default coverData;
