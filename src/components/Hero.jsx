@@ -10,7 +10,7 @@ function Hero({ month, spotifyLink, switchTheme, theme }) {
         <Button switchTheme={switchTheme} theme={theme} />
         <h1 className="title">lusco-fusco</h1>
         <p className="sub-title">
-          an eclectic monthly music playlist, curated by Wojciech Gmuzdek
+          an eclectic music playlist, curated by fontilan aka sernicze
         </p>
       </div>
       <a className="link" href={spotifyLink} target="_blank" rel="noreferrer">
