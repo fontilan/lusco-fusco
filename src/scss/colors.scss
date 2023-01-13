@@ -1,29 +1,29 @@
 // default colors (dark theme is default)
 :root {
   // shade of the background color
-  --color-back-0: hsl(70, 16%, 7%);
+  --color-back-0: #18181b;
 
   // shades of the main color
-  --color-main-0: hsl(113, 34%, 65%);
-  --color-main-1: hsl(113, 34%, 75%);
+  --color-main-0: #a16207;
+  --color-main-1: #eab308;
 
   // shades of the text color
-  --color-text-0: hsl(113, 34%, 99%);
-  --color-text-1: hsl(113, 34%, 95%);
+  --color-text-0: #f4f4f5;
+  --color-text-1: #e4e4e7;
 }
 
 // colors for the light theme
 [data-theme='light'] {
   // shade of the background color
-  --color-back-0: hsl(0, 0%, 98%);
+  --color-back-0: #f4f4f5;
 
   // shades of the main color
-  --color-main-0: hsl(321, 22%, 51%);
-  --color-main-1: hsl(321, 22%, 41%);
+  --color-main-0: #a16207;
+  --color-main-1: #713f12;
 
   // shades of the text color
-  --color-text-0: hsl(321, 22%, 5%);
-  --color-text-1: hsl(321, 22%, 7%);
+  --color-text-0: #27272a;
+  --color-text-1: #27272a;
 }
 
 // due to how data-* attributes work with CSS we have to use the vanilla var() variables, and only then can we reuse them as the $ SASS variables in other parts of the app

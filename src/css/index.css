@@ -39,19 +39,19 @@ h2 {
 }
 
 :root {
-  --color-back-0: hsl(70, 16%, 7%);
-  --color-main-0: hsl(113, 34%, 65%);
-  --color-main-1: hsl(113, 34%, 75%);
-  --color-text-0: hsl(113, 34%, 99%);
-  --color-text-1: hsl(113, 34%, 95%);
+  --color-back-0: #18181b;
+  --color-main-0: #a16207;
+  --color-main-1: #eab308;
+  --color-text-0: #f4f4f5;
+  --color-text-1: #e4e4e7;
 }
 
 [data-theme=light] {
-  --color-back-0: hsl(0, 0%, 98%);
-  --color-main-0: hsl(321, 22%, 51%);
-  --color-main-1: hsl(321, 22%, 41%);
-  --color-text-0: hsl(321, 22%, 5%);
-  --color-text-1: hsl(321, 22%, 7%);
+  --color-back-0: #f4f4f5;
+  --color-main-0: #a16207;
+  --color-main-1: #713f12;
+  --color-text-0: #27272a;
+  --color-text-1: #27272a;
 }
 
 .title {
