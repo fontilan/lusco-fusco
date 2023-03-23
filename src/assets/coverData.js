@@ -1,6 +1,6 @@
 const coverData = {
-  author: 'Luca di Napoli',
-  title: 'Last Winter',
+  author: 'Ron Hicks',
+  title: 'Amaranthine Continuance',
   link: 'https://artvee.com/dl/last-winter-6/',
 };
 

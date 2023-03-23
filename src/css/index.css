@@ -40,16 +40,16 @@ h2 {
 
 :root {
   --color-back-0: #18181b;
-  --color-main-0: #a16207;
-  --color-main-1: #eab308;
+  --color-main-0: #298979;
+  --color-main-1: #35b19c;
   --color-text-0: #f4f4f5;
   --color-text-1: #e4e4e7;
 }
 
 [data-theme=light] {
   --color-back-0: #f4f4f5;
-  --color-main-0: #a16207;
-  --color-main-1: #713f12;
+  --color-main-0: #35b19c;
+  --color-main-1: #298979;
   --color-text-0: #27272a;
   --color-text-1: #27272a;
 }
