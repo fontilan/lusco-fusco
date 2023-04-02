@@ -1,87 +1,167 @@
 const songsData = {
-  date: '02/23',
-  link: 'https://open.spotify.com/playlist/7Lz7wRpOszolsTFfFe6VmB?si=234c2cc5b8bf4e58',
+  date: '03-04/23',
+  link: 'https://open.spotify.com/playlist/7Lz7wRpOszolsTFfFe6VmB?si=30ea77d6e4f4484f',
 
   songs: [
     {
-      title: 'Ostatnia taka zima',
-      artist: 'Zima Stulecia',
+      title: 'Y o Y',
+      artist: 'Born At Midnite',
     },
     {
-      title: 'Windows',
-      artist: 'Leland Whitty',
+      title: 'What if Nile Rodgers and Fela Kuti Were Friends',
+      artist: 'All Day Breakfast Cafe',
     },
     {
-      title: 'Summer in Warsaw',
-      artist: 'Koscielski',
+      title: 'Truth',
+      artist: 'Wax Machine',
     },
     {
-      title: 'Blow My Mind',
-      artist: 'Say She She, Piya Malik',
+      title: "Trudi's Mood",
+      artist: 'Ruby Rushton',
     },
     {
-      title: 'Sun Blues',
-      artist: 'Alain Bellaïche',
+      title: 'Triple Helix',
+      artist: 'Soccer96, Tom Herbert',
     },
     {
-      title: 'One Eye Flees Aquapolis',
-      artist: "Nolan Potter, Nolan Potter's Nightmare Band",
+      title: 'Trickle Up',
+      artist: 'Palm Skin Productions',
     },
     {
-      title: 'Typical Love',
-      artist: 'Cate Le Bon',
+      title: 'To Hugo',
+      artist: 'Clogs',
     },
     {
-      title: 'Marla',
-      artist: 'Grizzly Bear',
+      title: 'Te Quiero Pero Por Otro Lado...',
+      artist: 'Savath & Savalas',
     },
     {
-      title: 'Reflections from the Moon',
-      artist: 'Speedy West',
+      title: 'The Spoon',
+      artist: 'Oscar Jerome',
     },
     {
-      title: 'Flight of the Ibis',
-      artist: 'Ian McDonald, Michael Giles',
+      title: 'Sophie',
+      artist: 'CVC',
     },
     {
-      title: 'Hero',
-      artist: 'Cornelia Murr',
+      title: 'Samari Da Yan Matan',
+      artist: 'Mamman Sani',
     },
     {
-      title: 'Uma Canção a Mais',
-      artist: 'Orquestra e Coro Som Livre',
+      title: 'Rinsed',
+      artist: 'Dean Blunt, TYSON',
     },
     {
-      title: 'Possibly Maybe',
-      artist: 'Björk',
+      title: 'Please Come Home',
+      artist: 'Jared Mattson',
     },
     {
-      title: 'Hlaf',
-      artist: 'Smote',
+      title: 'The Pack',
+      artist: 'Animali',
     },
     {
-      title: 'Interstellar Low Ways',
-      artist: 'EABS',
+      title: 'Out of my Mind',
+      artist: 'The Zenmenn, John Moods',
     },
     {
-      title: 'Bay B. MoMa',
-      artist: 'The Du-Rites',
+      title: 'Oh, Silly George',
+      artist: 'Skinny Pelembe',
     },
     {
-      title: 'Natura 2000',
-      artist: 'ETNOBOTANIKA',
+      title: 'Past, Present & Future',
+      artist: 'Demon Fuzz',
     },
     {
-      title: 'Dark Moon',
-      artist: 'Okonski',
+      title: 'Odda Delf',
+      artist: 'Craven Faults',
     },
     {
-      title: 'Step By Step',
-      artist: 'Eddie Chacon',
+      title: 'Moonlight',
+      artist: 'Kali Uchis',
     },
     {
-      title: 'Winter and Slumber',
-      artist: 'Aindulmedir',
+      title: 'Mender',
+      artist: 'Kibrom Birhane',
+    },
+    {
+      title: 'Love Your Grace',
+      artist: 'Vega Trails',
+    },
+    {
+      title: 'Laziness',
+      artist: 'Emile Londonien',
+    },
+    {
+      title: 'Lam Phu Thai #1',
+      artist: 'Khun Narin',
+    },
+    {
+      title: "Keepin' the Faith",
+      artist: 'De La Soul',
+    },
+    {
+      title: 'I Shimmer',
+      artist: 'Jadu Heart',
+    },
+    {
+      title: 'In These Times',
+      artist: 'Makaya McCraven',
+    },
+    {
+      title: 'House (with an attic)',
+      artist: 'Dima Pantyushin, Sasha Lipsky',
+    },
+    {
+      title: 'Holy Body Roll',
+      artist: 'A. Billi Free, The Lasso',
+    },
+    {
+      title: 'Hocusing for Beginners',
+      artist: 'The Advisory Circle',
+    },
+    {
+      title: 'Hayat',
+      artist: 'Kit Sebastian',
+    },
+    {
+      title: 'Goodbye Mr Chicago',
+      artist: '2shy',
+    },
+    {
+      title: 'Get It Up for Love',
+      artist: 'Ned Doheny',
+    },
+    {
+      title: 'Gestures',
+      artist: 'Carmen Villain, Arve Henriksen',
+    },
+    {
+      title: 'Eisa Dancers',
+      artist: 'Mice Parade',
+    },
+    {
+      title: "Don't Give Up",
+      artist: 'Tanukichan',
+    },
+    {
+      title: 'Distraction - Live',
+      artist: 'Ty Segall, Emmett Kelly',
+    },
+    {
+      title: 'Cold Wind',
+      artist: 'Ruby Goon',
+    },
+    {
+      title: 'Cherubic Hymn',
+      artist: 'Bruce Haack',
+    },
+    {
+      title: 'The Banality of Evil',
+      artist: 'Samuel Rohrer',
+    },
+    {
+      title: 'Across the Street',
+      artist: 'JIM',
     },
   ],
 };
